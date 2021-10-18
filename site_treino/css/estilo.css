@@ -16,13 +16,20 @@ bordas incluidas no tamanho total
 margens internas e externas: 0
  */
 
-
+body {
+    padding: 0px;
+    margin: 0px;
+}
 /* 
 -header e jumbotrom
 plano de fundo cor #71868f
 cor da fonte branca
 */
 
+header, .jumbotrom {
+    background-color: #16A2E0;
+    color: white;
+}
 
 
 
@@ -35,8 +42,13 @@ horizontal final
 vertical centralizado
 */
 
-
-
+header {
+    font:'Hind Siliguri', sans-serif ;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 /* 
 -nav
@@ -47,7 +59,13 @@ margem interna direita 85px
 margem interna superior 10px
 */
 
-
+nav {
+   display: flex;
+   height: 100%;
+   align-items: center; 
+   padding-right: 85px;
+   padding-top: 10px;
+}
 
 
 /* 
@@ -56,6 +74,12 @@ margens 0
 container flexivel
 sem pontos laterais
 */
+
+ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
 
 
 /* 
@@ -68,6 +92,13 @@ negrito: 500
 
 */
 
+ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 9px 20px;
+}
 
 
 /* PARAMOS AQUI */
@@ -77,7 +108,10 @@ plano de fundo cor #45B5E6
 arredondamento da borda 10px
 */
 
-
+a:hover {
+    background-color: #45B5E6;
+    border-radius: 10px;
+}
 
 /*
 -btn a
@@ -89,6 +123,14 @@ borda solida 2px de espessura cor branca
 transição 0.15 segundos
 */
 
+.btn a{
+    border-radius: 25px;
+    background-color: #fff;
+    color: #16A2E0;
+    padding: 2px 25px 2px 25px;
+    border: solid 2px #fff;
+    transition: 0.15s;
+}
 
 
 
@@ -97,7 +139,10 @@ cor da fonte branca
 plano de fundo 16A2E0
 */
 
-
+.btn a:hover{
+    color: #fff;
+    background-color: #16A2E0;
+}
 
 /*.toggle imagem
 altura 25px
@@ -105,7 +150,11 @@ margem interna superior e inferior 0 direita e esquerda 15px
 sumir da tela
 */
 
-
+.toggle img {
+    height: 25px;
+    padding: 0px 15px 0px 15px;
+    display: none;
+}
 
 /* Enquanto a largura for menor que 1000px:
 links{
@@ -115,7 +164,14 @@ margem interna superior e inferior 9px direita e esquerda 10px
     margem interna direita 50px
 */
 
-
+@media (max-width:1000px) {
+    a {
+        padding: 9px 10px 9px 10px;
+    }
+    .menu {
+        padding-right: 50px;
+    }
+}
 
 /* 
  Enquanto a largura for menor que 770px:
@@ -126,7 +182,14 @@ margem interna superior e inferior 9px direita e esquerda 10px
  aparecer
 */
 
-
+@media (max-width: 700px) {
+    .menu{
+        display: none;
+    }
+    .toggle img{
+        display: block;
+    }
+}
 
 /* Start Banner */
 
@@ -136,7 +199,11 @@ container flexivel
 horizontal space-around
 */
 
-
+.jumbotrom{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /*
@@ -144,6 +211,9 @@ horizontal space-around
 container flexivel
 */
 
+.left-banner, .right-banner {
+    display: flex;
+}
 
 /*
 .left-banner
@@ -152,6 +222,11 @@ orientação coluna
 crescimento 1
 */
 
+.left-banner {
+    width: 40%;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
 
 /*
@@ -162,7 +237,12 @@ vertical centralizado
 margem interna superior 65px
 */
 
-
+.banner-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+}
 
 
 /* -h2
@@ -173,12 +253,21 @@ negrito maximo
 largura 87%
 */
 
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100%;
+    width: 87%;
+}
 
 /*.left-banner .logo
 largura 72%
 */
 
-
+.left-banner, .logo{
+    width: 72%;
+}
 
 /*
 .banner-bottom
@@ -187,6 +276,11 @@ orientação coluna
 vertical centralizado
 */
 
+.banner-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /* .store
@@ -198,14 +292,22 @@ horizontal centralizado
 
 */
 
-
+.store {
+    display: flex;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 /*.store a img
 largura 220px
 */
 
 
-
+.store a img{
+    width: 220px;
+}
 
 
 /* 
@@ -214,12 +316,19 @@ margem externa direita 15px
 
 */
 
-
+.store a img:nth-child(1){
+    margin-right: 15px;
+}
 
 /* p
 fonte 'Hind Siliguri', sans-serif;
 tamanho da fonte 25px
 */
+
+p{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+}
 
 /* .right-banner
 margem externa esquerda 35px
@@ -227,8 +336,17 @@ pegar o que sobra 0.5
 
 */
 
+.right-banner {
+    margin-left: 35px;
+    flex-grow: 0.5;
+}
+
 /*
 Enquanto a altura for menor que 360px
 .right-banner
 sumir
+*/
 
+@media (max-width: 360px){
+    .right-banner{display:none;}
+}
