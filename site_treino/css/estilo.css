@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+@import 'charset UTF-8';
+/* 
+Site todo
+bordas incluidas no tamanho total
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* 
+-body
+margens internas e externas: 0
+ */
+
+
+/* 
+-header e jumbotrom
+plano de fundo cor #71868f
+cor da fonte branca
+*/
+
+
+
+
+/* 
+-header
+fonte: 'Hind Siliguri', sans-serif
+altura 80px
+container flexivel
+horizontal final
+vertical centralizado
+*/
+
+
+
+
+/* 
+-nav
+container flexivel
+altura 100%
+vertical centralizado
+margem interna direita 85px
+margem interna superior 10px
+*/
+
+
+
+
+/* 
+-ul
+margens 0
+container flexivel
+sem pontos laterais
+*/
+
+
+/* 
+links ul
+Texto sem sublinhado
+cor da fonte branca
+tamanho da fonte 1.2rem ou
+margem interna superior e inferior 9px direita e esquerda 20px
+negrito: 500
+
+*/
+
+
+
+/* PARAMOS AQUI */
+
+/*Efeito ao passar o mouse pelos links
+plano de fundo cor #45B5E6
+arredondamento da borda 10px
+*/
+
+
+
+/*
+-btn a
+arredondamento da borda 25px
+plano de fundo branco
+cor da fonte 16A2E0
+margem interna superior e inferior 2px direita e esquerda 25px
+borda solida 2px de espessura cor branca
+transição 0.15 segundos
+*/
+
+
+
+
+/* -Efeito ao passar o mouse pelo link
+cor da fonte branca
+plano de fundo 16A2E0
+*/
+
+
+
+/*.toggle imagem
+altura 25px
+margem interna superior e inferior 0 direita e esquerda 15px
+sumir da tela
+*/
+
+
+
+/* Enquanto a largura for menor que 1000px:
+links{
+margem interna superior e inferior 9px direita e esquerda 10px
+}
+.menu{
+    margem interna direita 50px
+*/
+
+
+
+/* 
+ Enquanto a largura for menor que 770px:
+ .menu 
+ sumir
+
+ .toggle imagem
+ aparecer
+*/
+
+
+
+/* Start Banner */
+
+/* .jumbotrom
+altura 600px
+container flexivel
+horizontal space-around
+*/
+
+
+
+
+/*
+.left-banner, .right-banner
+container flexivel
+*/
+
+
+/*
+.left-banner
+largura 40%
+orientação coluna
+crescimento 1
+*/
+
+
+
+/*
+.banner-top
+container flexivel
+orientação coluna
+vertical centralizado
+margem interna superior 65px
+*/
+
+
+
+
+/* -h2
+margem externa superior 50px
+alinhamento do texto centralizado
+tamanho da fonte 36px
+negrito maximo
+largura 87%
+*/
+
+
+/*.left-banner .logo
+largura 72%
+*/
+
+
+
+/*
+.banner-bottom
+container flexivel
+orientação coluna
+vertical centralizado
+*/
+
+
+
+/* .store
+container flexivel
+margem interna superior 10px
+quebrar linha
+vertical centralizado
+horizontal centralizado
+
+*/
+
+
+
+/*.store a img
+largura 220px
+*/
+
+
+
+
+
+/* 
+.store a img filho 1
+margem externa direita 15px
+
+*/
+
+
+
+/* p
+fonte 'Hind Siliguri', sans-serif;
+tamanho da fonte 25px
+*/
+
+/* .right-banner
+margem externa esquerda 35px
+pegar o que sobra 0.5
+
+*/
+
+/*
+Enquanto a altura for menor que 360px
+.right-banner
+sumir
+
